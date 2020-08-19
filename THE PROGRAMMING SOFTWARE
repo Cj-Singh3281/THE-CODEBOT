@@ -1,0 +1,204 @@
+import pyttsx3
+import os
+
+pyttsx3.speak("HELLO USER, PLEASE PROVIDE YOUR NAME")
+print()
+a = input("ENTER YOUR NAME :")
+print()
+print("---------->     Hello "+ a.upper() +"                  <----------")
+print()
+print("---------->     CREATED BY CHIRANJIV SINGH     <----------") 
+
+pyttsx3.speak("HELLO" + a)
+pyttsx3.speak("THE CREATOR CJ SINGH WELCOMES YOU")
+pyttsx3.speak("WELCOME TO THE DATABOT")
+
+pyttsx3.speak("PLEASE PROVIDE INFORMATION ABOUT YOUR OPERATING SYSTEM")
+print()
+b = input("ENTER THE OPERATING SYSTEM YOU ARE USING (eg.Linux,Mac,Windows,etc.)  :")
+print()
+
+if ("linux" in  b.lower()):   
+ 	pyttsx3.speak("SCANNING FOR APPLICATIONS ON YOUR LINUX OPERATING SYSTEM")
+ 	print("SCANNING YOUR LINUX OPERATING SYSTEM")
+ 	os.system("timeout 3")
+
+elif ("windows" in b.lower()):
+	pyttsx3.speak("SCANNING FOR APPLICATIONS ON YOUR WINDOWS OPERATING SYSTEM")
+	print("SCANNING YOUR WINDOWS OPERATING SYSTEM")
+	os.system("timeout 3")
+
+elif("mac" in b.lower()) or ("macos" in b.lower()):
+	pyttsx3.speak("WE ARE SCANNING FOR APPLICATIONS ON YOUR MAC OPERATING SYSTEM")
+	print("SCANNING YOUR MAC OPERATING SYSTEM")
+	os.system("timeout 3")
+
+else:
+	pyttsx3.speak("WE ARE SCANNING FOR APPLICATIONS ON YOUR OPERATING SYSTEM")
+	print("SCANNING YOUR OPERATING SYSTEM")
+	os.system("timeout 3")
+
+
+pyttsx3.speak("SO HERE IS THE LIST APPLICATIONS I CAN HELP YOU WITH ON YOUR SYSTEM")
+print        ("HERE ARE SOME APPS, I CAN HELP YOU WITH.")
+print        (                                          )
+
+print("------> 1.  CHROME                <-----")
+print("------> 2.  MICROSOFT STORE       <-----")
+print("------> 3.  NOTEPAD               <-----")
+print("------> 4.  MEDIA PLAYER          <-----")
+print("------> 5.  PAINT                 <-----")
+print("------> 6.  POWERSHELL            <-----")
+print("------> 7.  ADOBE ACROBAT READER  <-----")
+print("------> 8.  SNIPPING TOOL         <-----") 
+print("------> 9.  WPS OFFICE            <-----")
+print("------> 10. MOZILLA FIREFOX       <-----")
+print("------> 11. INTERNET EXPLOER      <-----")
+print("------> 12. WORDPAD               <-----")
+print("------> 13. ORACLE VM VIRTUALBOX  <-----")
+print("------> 14. CALCULATOR            <-----")
+print("------> 15. TOOLKIT               <-----")
+print("------> 16. MICROSOFT EDGE        <-----")
+print("------> 17. ANACONDA NAVIGATOR    <-----")
+print("------> 18. SUBLIME TEXT EDITOR   <-----")
+print("------> 19. MICROSOFT ONEDRIVE    <-----")
+print()
+
+
+while True:
+	print("PLEASE PROVIDE ME WITH YOUR REQUIREMENT: " , end='')
+	p= input ()
+
+	if (("don't" in p.lower()) or ("dont" in p.lower()) or (("do" in p.lower()) and ("not" in p.lower())) or ("prohibit" in p.lower()) or ("forbid" in p.lower())):
+		pyttsx3.speak("GIVE ME SOMETHING MORE INTERESTING TO DO")
+		pyttsx3.speak("I CAN DO EVERYTHING")
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))    and   (("firefox" in p.lower()) or (("2nd" in p.lower()) and ("best" in p.lower()) and ("browser" in p.lower())) or (("second" in p.lower()) and ("best" in p.lower()) and ("browser" in p.lower())) or ("mozilla" in p.lower())):
+		pyttsx3.speak("LAUNCHING MOZILLA FIREFOX, ENJOY BROWSING")
+		os.system("firefox")
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower())) and (("explorer" in p.lower()) or (("worst" in p.lower()) and ("browser" in p.lower())) or (("bad" in p.lower()) and ("browser" in p.lower()))):
+		pyttsx3.speak("LAUNCING THE INTERNET EXPLORER, HAVE A SAFE BROWSING")
+		os.system("start iexplore")	
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower())) and ((("microsoft" in p.lower()) and ("edge" in p.lower())) or ("edge" in p.lower()) or ("microsoftedge" in p.lower()) or (("ms" in p.lower()) and ("edge" in p.lower())) or (("windows" in p.lower()) and ("browser" in p.lower())) or (("microsoft" in p.lower()) and ("browser" in p.lower()))):
+		pyttsx3.speak("LAUNCHING THE MICROSOFT EDGE, ")
+		os.system("msedge")	
+
+
+																																																										
+	elif (("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or ("launch" in p.lower()))     and   (("chrome" in p.lower()) or ("browser" in p.lower())  or ("google" in p.lower()) or (("best" in p.lower()) and ("browser" in p.lower()))):
+		pyttsx3.speak("LAUNCHING GOOGLE CHROME FOR YOU, HAPPY BROWSING")
+		os.system("chrome")
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower())) and (("sublimetext" in p.lower()) or (("sublime" in p.lower()) and ("text" in p.lower()))   or (("sublime" in p.lower()) and ("editor" in p.lower())) or ("sublime" in p.lower())):
+		pyttsx3.speak("LAUNCHING SUBLIME TEXT EDITOR ON YOUR DEVICE")
+		os.system("sublime_text")
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("make" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))    and    (("notepad" in p.lower()) or ("editor" in p.lower()) or (("text" in p.lower()) and ("editor" in p.lower())) or ("note" in p.lower()) or (("note" in p.lower()) and ("pad"in p.lower()))):
+		pyttsx3.speak("LAUNCHING NOTEPAD")	
+		os.system("notepad")
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("listen" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))    and    (("media" in p.lower()) or ("player" in p.lower()) or ("songs" in p.lower()) or ("videos" in p.lower()) or ("picture" in p.lower()) or ("pictures" in p.lower()) or ("song" in p.lower()) or ("video" in p.lower()) or ("music" in p.lower())): 
+		pyttsx3.speak("LAUNCHING THE WINDOWS MEDIA PLAYER FOR YOU")
+		os.system("wmplayer")
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("make" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))    and   (("painting" in p.lower()) or ("paint" in p.lower()) or ("drawing" in p.lower()) or ("sketch"in p.lower()) or ("draw" in p.lower())):
+		pyttsx3.speak("HERE IS PAINT FOR YOU")
+		os.system("mspaint")
+
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))    and   (("cal" in p.lower()) or ("calculation" in p.lower()) or ("calculator" in p.lower()) or ("calculations" in p.lower()) or ("maths" in p.lower())  or ("addition" in p.lower()) or ("multiplication" in p.lower()) or ("multiply" in p.lower()) or ("subtract" in p.lower()) or ("division" in p.lower()) or ("divide" in p.lower()) or ("mathematical operation" in p.lower())):
+ 		pyttsx3.speak("HERE YOU CAN DO ALL CALCULATIONS")
+ 		os.system("calc")
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))  and  (("powershell" in p.lower()) or (("power" in p.lower()) and ("shell" in p.lower()))): 
+		pyttsx3.speak("STARTING THE WINDOWS POWERSHELL")
+		os.system("start Powershell")
+
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("open" in p.lower()) or ("need" in p.lower()) or ("want" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))   and   (("adobe" in p.lower()) or ("acrobat" in p.lower()) or ("reader" in p.lower()) or (("pdf" in p.lower()) and ("viewer" in p.lower()))):
+		pyttsx3.speak("LAUNCHING THE ADOBE ACROBAT READER FOR YOU")
+		os.system("acrord32")
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower())) and (("snipping" in p.lower()) or ("snip" in p.lower()) or (("snip" in p.lower()) and ("tool" in p.lower())) or("screenshot" in p.lower()) ):
+		pyttsx3.speak("YOU ARE NOW USING THE SNIPPING TOOL")
+		os.system("snippingtool")	
+
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("create" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("make" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))   and   (("wps" in p.lower()) or ("office" in p.lower()) or ("pdf" in p.lower())  or ("spreadsheet" in p.lower()) or ("spreadsheets" in p.lower()) or ("documents" in p.lower()) or ("document" in p.lower()) or ("pdfs" in p.lower()) or ("presentation" in p.lower()) or("presentations" in p.lower())):
+		pyttsx3.speak("LAUNCHING THE WPS OFFICE")
+		os.system("ksolaunch")
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("open" in p.lower()) or ("need" in p.lower()) or ("want" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower())) and ((("windows" in p.lower()) and ("store" in p.lower())) or (("microsoft" in p.lower()) and ("store" in p.lower())) or ("buy" in p.lower()) or ("purchase" in p.lower()) or (("game" in p.lower()) and ("store" in p.lower())) or (("games" in p.lower()) and ("store" in p.lower())) or (("app" in p.lower()) and ("store" in p.lower())) or("shop" in p.lower()) or ("shopping" in p.lower()) or (("apps" in p.lower()) and ("store" in p.lower()))):
+		pyttsx3.speak("LAUNCHING MICROSOFT WINDOWS STORE,HAPPY SHOPPING")
+		os.system("start ms-windows-store:")
+		
+
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))  and   (("toolkit" in p.lower()) or (("tool" in p.lower()) and  ("kit" in p.lower()))):
+		pyttsx3.speak("STARTING WINDOWS TOOLKIT FOR YOU")
+		os.system("toolkit")
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower()))	and ((("oracle" in p.lower()) and ("vm" in p.lower())) or ("virtualbox" in p.lower()) or ("virtualbox" in p.lower()) or (("virtual" in p.lower()) and ("machine" in p.lower())) or (("virtual" in p.lower()) and ("box" in p.lower()))):
+		pyttsx3.speak("LAUNCHING THE ORACLE VM VIRTUALBOX")
+		os.system("virtualbox")
+
+
+	
+	elif (("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower())) and ((("microsoft" in p.lower()) and ("onedrive" in p.lower())) or ("onedrive" in p.lower())  or (("ms" in p.lower()) and ("onedrive" in p.lower())) or (("one" in p.lower()) and ("drive" in p.lower()))):
+		pyttsx3.speak("LAUNCHING THE MICROSOFT ONE DRIVE CLOUD STORAGE ON YOUR SYSTEM")
+		os.system("OneDrive")
+
+
+
+	elif (("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower())) and (("anaconda" in p.lower()) or ("anaconda3" in p.lower()) or ("jupyter" in p.lower())  or ("jupyterlab" in p.lower()) or ("spyder" in p.lower()) or (("qt" in p.lower()) and ("console" in p.lower()))):
+		pyttsx3.speak("LAUNCHING THE ANACONDA NAVIGATOR ON YOUR SYSTEM")
+		os.system("anaconda-navigator")
+
+
+
+	elif(("run" in p.lower()) or ("activate" in p.lower()) or ("execute" in p.lower()) or ("want" in p.lower()) or ("need" in p.lower()) or ("make" in p.lower()) or ("open" in p.lower()) or ("start" in p.lower()) or ("play" in p.lower()) or("launch" in p.lower())) and (("wordpad" in p.lower()) or (("word" in p.lower()) and ("pad" in p.lower()))):
+		pyttsx3.speak("LAUNCHING WORDPAD ON YOUR SYSTEM")
+		os.system("wordpad")
+
+
+  	
+
+	elif("exit" in p.lower()) or ("close" in p.lower())  or ("stop" in p.lower()) or ("terminate" in p.lower()) or ("quit" in p.lower()):
+		print()
+		print("THANK YOU FOR USING THIS APP")
+		pyttsx3.speak("THANK YOU, HAVE A NICE DAY")
+		break
+
+
+	else:
+	    pyttsx3.speak("SORRY, I CANNOT FIND THIS ON YOUR DEVICE")
+	    pyttsx3.speak("MAYBE YOU CAN CHECK FOR SPELLING MISTAKES IF ANY")
+	    print("CHECK THE DETAILS AND TRY AGAIN")
+	    print()
