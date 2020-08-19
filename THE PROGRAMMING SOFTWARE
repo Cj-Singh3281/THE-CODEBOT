@@ -5,9 +5,9 @@ pyttsx3.speak("HELLO USER, PLEASE PROVIDE YOUR NAME")
 print()
 a = input("ENTER YOUR NAME :")
 print()
-print("---------->     Hello "+ a.upper() +"                  <----------")
+print("---------->       Hello "+ a.upper() +"                   <----------")
 print()
-print("---------->     CREATED BY CHIRANJIV SINGH     <----------") 
+print("---------->       CREATED BY CHIRANJIV SINGH              <----------") 
 
 pyttsx3.speak("HELLO" + a)
 pyttsx3.speak("THE CREATOR CJ SINGH WELCOMES YOU")
@@ -41,7 +41,7 @@ else:
 
 pyttsx3.speak("SO HERE IS THE LIST APPLICATIONS I CAN HELP YOU WITH ON YOUR SYSTEM")
 print        ("HERE ARE SOME APPS, I CAN HELP YOU WITH.")
-print        (                                          )
+print        ()
 
 print("------> 1.  CHROME                <-----")
 print("------> 2.  MICROSOFT STORE       <-----")
@@ -192,7 +192,7 @@ while True:
 
 	elif("exit" in p.lower()) or ("close" in p.lower())  or ("stop" in p.lower()) or ("terminate" in p.lower()) or ("quit" in p.lower()):
 		print()
-		print("THANK YOU FOR USING THIS APP")
+		print("THANK YOU FOR USING DATABOT")
 		pyttsx3.speak("THANK YOU, HAVE A NICE DAY")
 		break
 
@@ -200,5 +200,5 @@ while True:
 	else:
 	    pyttsx3.speak("SORRY, I CANNOT FIND THIS ON YOUR DEVICE")
 	    pyttsx3.speak("MAYBE YOU CAN CHECK FOR SPELLING MISTAKES IF ANY")
-	    print("CHECK THE DETAILS AND TRY AGAIN")
+	    print("CHECK YOUR REQUIREMENT AND TRY AGAIN")
 	    print()
